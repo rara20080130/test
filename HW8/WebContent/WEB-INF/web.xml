@@ -1,0 +1,32 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <display-name>HW8</display-name>
+    <description>HW8</description>
+
+    <servlet>
+        <servlet-name>  my-servlet       </servlet-name>
+        <servlet-class>webapp.hw8.hw8</servlet-class>
+        <init-param>
+            <param-name>   jdbcDriver             </param-name> 
+            <param-value>  com.mysql.jdbc.Driver  </param-value>
+        </init-param>
+        <init-param>
+            <param-name>   jdbcURL                </param-name> 
+            <param-value>  jdbc:mysql:///webapp     </param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>  my-servlet </servlet-name>
+        <url-pattern>/HW8</url-pattern>
+    </servlet-mapping>
+    
+
+    <welcome-file-list>
+        <welcome-file>HW8</welcome-file>
+    </welcome-file-list>
+
+</web-app>
